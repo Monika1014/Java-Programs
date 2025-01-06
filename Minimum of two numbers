@@ -1,0 +1,13 @@
+public class mini {
+
+ public static void main(String[] args) {
+
+ int num1 = 10, num2 = 20, num3 = 15, min;
+
+ min = (num1 > num2) ? (num2 > num3 ? num3 : num2) : (num1 > num3 ? num3 : num1);
+
+ System.out.println("Minimum of "  + num1 + "," + num2 + ",and " + num3 + " is : " + min);
+
+ }
+
+}
