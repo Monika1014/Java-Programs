@@ -1,0 +1,19 @@
+import java.util.*;
+public class callByValue
+{
+    int mark=80;
+    void subject(int mark)
+    {
+        mark=mark-20;
+        System.out.println("The call by value mark is "+mark);
+    }
+    
+    public static void main(String []args)
+    {
+        callByValue c1=new callByValue();
+        System.out.println("Before passing the value, the mark is "+c1.mark);
+        c1.subject(60);
+        System.out.println("After passing the value, the mark is "+c1.mark);
+    }
+    
+}
