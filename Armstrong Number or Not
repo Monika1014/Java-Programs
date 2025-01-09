@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter the Number : ");
+	    int n=sc.nextInt();
+		int remainder,sum=0,a;
+		a=n;
+		while(n>0)
+		{
+		    remainder=n%10;
+		    sum=sum+remainder*remainder*remainder;
+		    n=n/10;
+		}
+		if(a==sum)
+		{
+		    System.out.println("This is a Armstrong Number");
+		}
+		else{
+		    System.out.println("This is not a Armstrong Number");
+		}
+		
+	}
+}
